@@ -1,0 +1,22 @@
+footer {
+  padding: 12px 35px 0 45px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #5c6bc0;
+
+  p {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .icon-cafe:hover {
+    color: #8B4513;
+  }
+
+  .icon-corazon:hover {
+    color: #FF0000;
+  }
+}
