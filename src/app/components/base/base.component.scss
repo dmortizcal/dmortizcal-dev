@@ -8,7 +8,7 @@ app-navbar {
 
 app-footer {
   position: fixed;
-  background-color: #a47c74;
+  background-color: #5C6BC0;
   opacity: 0.7;
   bottom: 0;
   left: 0;
@@ -17,12 +17,16 @@ app-footer {
   z-index: 2;
 }
 
-.app-wrapper {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 64px;
-  bottom: 0;
-  left: 0;
-  right: 0;
+
+.mat-sidenav {
+  top: 65px;
+  margin: 5px 15px;
+  width: 180px;
+}
+
+.mat-sidenav-container {
+  min-height: 100%;
+}
+
+button {
 }

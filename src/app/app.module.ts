@@ -9,6 +9,7 @@ import {FooterComponent} from "./components/footer/footer.component";
 import {NavbarComponent} from "./components/navbar/navbar.component";
 import {HomeComponent} from "./components/home/home.component";
 import {NotFoundComponent} from "./components/not-found/not-found.component";
+import {SidenavService} from "./services/sidenav.service";
 
 @NgModule({
   declarations: [
@@ -17,15 +18,15 @@ import {NotFoundComponent} from "./components/not-found/not-found.component";
     FooterComponent,
     NavbarComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule
-  ],
-  providers: [],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+    ],
+  providers: [SidenavService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
