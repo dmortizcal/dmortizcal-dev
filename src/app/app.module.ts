@@ -1,16 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 import {MaterialModule} from "./material.module";
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BaseComponent } from './base/base.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import {AppRoutingModule} from './app-routing.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {AppComponent} from "./app.component";
+import {BaseComponent} from "./components/base/base.component";
+import {FooterComponent} from "./components/footer/footer.component";
+import {NavbarComponent} from "./components/navbar/navbar.component";
+import {HomeComponent} from "./components/home/home.component";
+import {NotFoundComponent} from "./components/not-found/not-found.component";
+import {SidenavService} from "./services/sidenav.service";
 
 @NgModule({
   declarations: [
@@ -19,15 +18,16 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FooterComponent,
     NavbarComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule
-  ],
-  providers: [],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+    ],
+  providers: [SidenavService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

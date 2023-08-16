@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" >
+  <a mat-icon-button *ngIf="viewIconMenu" (click)="clickMenu()">
+    <mat-icon>menu</mat-icon>
+  </a>
+  <a class="logo" mat-button matTooltip="Ir a la página principal" routerLink="/">
+    <img src="../../assets/images/logo.png" alt="Logo">
+  </a>
+
+  <ng-container *ngIf="!viewIconMenu">
+  <!--  <button mat-button>Uno</button>
+    <button mat-button>Dos</button>
+    <button mat-button>Tres</button>-->
+  </ng-container>
+</mat-toolbar>
