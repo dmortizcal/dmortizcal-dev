@@ -1,0 +1,46 @@
+<div class="container">
+  <form [formGroup]="formContacto" (submit)="sendEmail($event)">
+
+    <div class="flex-container">
+      <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <label>
+          <input matInput required formControlName="user_name" name="user_name" type="text">
+        </label>
+        <mat-error>
+          Campo requerido
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="flex-container">
+      <mat-form-field appearance="fill">
+        <mat-label>Correo Electrónico</mat-label>
+        <label>
+          <input matInput required formControlName="user_email" name="user_email" type="email">
+        </label>
+        <mat-error>
+          Campo requerido o email incorrecto
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="flex-container">
+      <mat-form-field appearance="fill">
+        <mat-label>Mensaje</mat-label>
+        <textarea matInput required formControlName="message" name="message" type="text"></textarea>
+        <mat-error>
+          Campo requerido
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="flex-container">
+      <button mat-flat-button color="primary" type="submit" [disabled]="saving">
+        <mat-icon>send</mat-icon>
+        {{saving ? "Enviando..." : "Enviar" }}
+      </button>
+    </div>
+
+  </form>
+</div>
