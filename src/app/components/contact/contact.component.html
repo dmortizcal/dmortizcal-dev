@@ -1,46 +1,82 @@
 <div class="container">
+  <h1>¡Hola! 👋</h1>
+  <b>¡Es genial que estés aquí!</b>
+  <p>Si deseas ponerte en contacto conmigo, puedes llenar el formulario que encontrarás a continuación con tus detalles
+    y mensaje.</p>
+
+  <h3>Formulario de Contacto:</h3>
   <form [formGroup]="formContacto" (submit)="sendEmail($event)">
 
-    <div class="flex-container">
-      <mat-form-field appearance="fill">
-        <mat-label>Nombre</mat-label>
-        <label>
-          <input matInput required formControlName="user_name" name="user_name" type="text">
-        </label>
-        <mat-error>
-          Campo requerido
-        </mat-error>
-      </mat-form-field>
-    </div>
+    <div class="grid">
+      <div class="col-12 md:col-12 lg:col-8">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Nombre</mat-label>
+          <label>
+            <input matInput required formControlName="user_name"
+                   name="user_name" type="text" class="full-width">
+          </label>
+          <mat-error>
+            Campo requerido
+          </mat-error>
+        </mat-form-field>
+      </div>
 
-    <div class="flex-container">
-      <mat-form-field appearance="fill">
-        <mat-label>Correo Electrónico</mat-label>
-        <label>
-          <input matInput required formControlName="user_email" name="user_email" type="email">
-        </label>
-        <mat-error>
-          Campo requerido o email incorrecto
-        </mat-error>
-      </mat-form-field>
-    </div>
+      <div class="col-12 md:col-12 lg:col-8">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Correo Electrónico</mat-label>
+          <label>
+            <input matInput required formControlName="user_email"
+                   name="user_email" type="email" class="full-width">
+          </label>
+          <mat-error>
+            Campo requerido o email incorrecto
+          </mat-error>
+        </mat-form-field>
+      </div>
 
-    <div class="flex-container">
-      <mat-form-field appearance="fill">
-        <mat-label>Mensaje</mat-label>
-        <textarea matInput required formControlName="message" name="message" type="text"></textarea>
-        <mat-error>
-          Campo requerido
-        </mat-error>
-      </mat-form-field>
-    </div>
+      <div class="col-12 md:col-12 lg:col-8">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Mensaje</mat-label>
+          <textarea matInput required formControlName="message"
+                    name="message" type="text" class="full-width"></textarea>
+          <mat-error>
+            Campo requerido
+          </mat-error>
+        </mat-form-field>
+      </div>
 
-    <div class="flex-container">
-      <button mat-flat-button color="primary" type="submit" [disabled]="saving">
-        <mat-icon>send</mat-icon>
-        {{saving ? "Enviando..." : "Enviar" }}
-      </button>
+      <div class="col-12 md:col-12 lg:col-8">
+        <div class="flex justify-content-end">
+          <button mat-flat-button color="primary" type="submit" [disabled]="saving">
+            <mat-icon>send</mat-icon>
+            {{saving ? "Enviando..." : "Enviar" }}
+          </button>
+        </div>
+      </div>
     </div>
 
   </form>
+
+  <br/>
+
+  <h3>También puedes encontrarme en:</h3>
+  <div class="card">
+    <div class="flex justify-content-start">
+      <div class="flex align-items-center justify-content-center w-4rem h-4rem">
+        <a matTooltip="WhatsApp" target="_blank" href="https://wa.me/573022422101/">
+          <img src="assets/images/whatsapp.png" alt="LogoWhatsApp" class="img-redes">
+        </a>
+      </div>
+      <div class="flex align-items-center justify-content-center w-4rem h-4rem">
+        <a matTooltip="GitHub" target="_blank" href="https://github.com/dmortizcal/">
+          <img src="assets/images/github.png" alt="LogoGitHub" class="img-redes">
+        </a>
+      </div>
+      <div class="flex align-items-center justify-content-center w-4rem h-4rem">
+        <a matTooltip="Linkedin" target="_blank" href="https://www.linkedin.com/in/dmortizcal/">
+          <img src="assets/images/linkedin.png" alt="LogoLinkedin" class="img-redes">
+        </a>
+      </div>
+    </div>
+  </div>
 </div>

@@ -2,3 +2,21 @@
   background-color: #47b047;
   color: white;
 }
+
+.full-width {
+  width: 100%;
+}
+
+.full-width input {
+  width: 100%;
+}
+
+.img-redes {
+  width: 25px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.img-redes:hover {
+  transform: scale(1.3);
+}
