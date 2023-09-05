@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <mat-sidenav-container >
   <mat-sidenav mode="side" [opened]="isSidenavOpen" class="app-wrapper">
-    <a mat-button routerLink="contacto">
+    <a mat-button routerLink="contacto" (click)="closeSidenav()">
       Contacto
     </a>
     <!--<button mat-button>Uno</button><br/>

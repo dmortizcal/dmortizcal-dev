@@ -14,12 +14,12 @@ $app-theme-palette: (
   100 : #c5cbe9,
   200 : #9fa8da,
   300 : #7985cb,
-  400 : #5c6bc0,
-  500 : #3f51b5,
-  600 : #394aae,
-  700 : #3140a5,
-  800 : #29379d,
-  900 : #1b278d,
+  400 : #080024,
+  500 : #f3bb22,
+  600 : #a2b862,
+  700 : #51b5a3,
+  800 : #00b3e4,
+  900 : #080024,
   A100 : #c6cbff,
   A200 : #939dff,
   A400 : #606eff,
@@ -62,6 +62,7 @@ $app-theme: mat.define-light-theme((
 // that you are using.
 @include mat.core-theme($app-theme);
 @include mat.button-theme($app-theme);
+@include mat.all-component-themes($app-theme);
 
 /* You can add global styles to this file, and also import other style files */
 
