@@ -1,46 +1,45 @@
 <div class="container">
-  <h1>¡Hola! 👋</h1>
-  <b>¡Es genial que estés aquí!</b>
-  <p>Si deseas ponerte en contacto conmigo, puedes llenar el formulario que encontrarás a continuación con tus detalles
-    y mensaje.</p>
+  <h1>¡{{'hello' | translate }}! 👋</h1>
+  <b>¡{{'itIsGreatThatYouAreHere'|translate}}!</b>
+  <p>{{'contactMeAndMessage'|translate}}</p>
 
-  <h3>Formulario de Contacto:</h3>
+  <h3>{{'contactForm'|translate}}:</h3>
   <form [formGroup]="formContacto" (submit)="sendEmail($event)">
 
     <div class="grid">
       <div class="col-12 md:col-12 lg:col-8">
         <mat-form-field appearance="fill" class="full-width">
-          <mat-label>Nombre</mat-label>
+          <mat-label>{{'name'|translate}}</mat-label>
           <label>
             <input matInput required formControlName="user_name"
                    name="user_name" type="text" class="full-width">
           </label>
           <mat-error>
-            Campo requerido
+            {{'requiredField'|translate}}
           </mat-error>
         </mat-form-field>
       </div>
 
       <div class="col-12 md:col-12 lg:col-8">
         <mat-form-field appearance="fill" class="full-width">
-          <mat-label>Correo Electrónico</mat-label>
+          <mat-label>{{'email'|translate}}</mat-label>
           <label>
             <input matInput required formControlName="user_email"
                    name="user_email" type="email" class="full-width">
           </label>
           <mat-error>
-            Campo requerido o email incorrecto
+            {{'incorrectEmail'|translate}}
           </mat-error>
         </mat-form-field>
       </div>
 
       <div class="col-12 md:col-12 lg:col-8">
         <mat-form-field appearance="fill" class="full-width">
-          <mat-label>Mensaje</mat-label>
+          <mat-label>{{'message'|translate}}</mat-label>
           <textarea matInput required formControlName="message"
                     name="message" type="text" class="full-width"></textarea>
           <mat-error>
-            Campo requerido
+            {{'requiredField'|translate}}
           </mat-error>
         </mat-form-field>
       </div>
@@ -49,7 +48,7 @@
         <div class="flex justify-content-end">
           <button mat-flat-button color="primary" type="submit" [disabled]="saving">
             <mat-icon>send</mat-icon>
-            {{saving ? "Enviando..." : "Enviar" }}
+            {{ 'send'|translate  }}
           </button>
         </div>
       </div>
@@ -59,7 +58,7 @@
 
   <br/>
 
-  <h3>También puedes encontrarme en:</h3>
+  <h3>{{'youCanAlsoFindMeAt'|translate}}:</h3>
   <div class="card">
     <div class="flex justify-content-start">
       <div class="flex align-items-center justify-content-center w-4rem h-4rem">

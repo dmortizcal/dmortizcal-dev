@@ -12,6 +12,16 @@ import {NotFoundComponent} from "./components/not-found/not-found.component";
 import {SidenavService} from "./services/sidenav.service";
 import {ContactComponent} from './components/contact/contact.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {BrowserLanguageDetectorService} from "./services/browser-language-detector.service";
+
+
+// Configura el cargador de traducción
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/translations/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -25,13 +35,24 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      },
+      defaultLanguage: 'es',
+    })
   ],
-  providers: [SidenavService],
+  providers: [
+    SidenavService,
+    BrowserLanguageDetectorService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
