@@ -10,11 +10,16 @@ import {BrowserLanguageDetectorService} from "../../../services/browser-language
 })
 export class NavbarComponent implements OnInit {
   viewIconMenu = true;
+  languages =[{}]
 
   constructor(
     private sidenavService: SidenavService,
     private translate: TranslateService,
     private browserLanguageDetector: BrowserLanguageDetectorService) {
+    this.languages = [
+      { code: 'en', name: 'english', flag: '' },
+      { code: 'es', name: 'spanish', flag: '../../assets/images/flags/es.png' },
+    ];
   }
 
   ngOnInit(): void {
