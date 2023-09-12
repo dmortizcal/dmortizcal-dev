@@ -18,9 +18,13 @@ app-footer {
 }
 
 .mat-sidenav {
-  top: 65px;
-  margin: 5px 15px;
   width: 180px;
+  height: 100%;
+
+  a {
+    top: 70px;
+    margin: 0px 15px;
+  }
 }
 
 .mat-sidenav-container {

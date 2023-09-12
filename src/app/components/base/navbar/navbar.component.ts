@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {SidenavService} from "../../../services/sidenav.service";
 import {TranslateService} from '@ngx-translate/core';
-import {BrowserLanguageDetectorService} from "../../../services/browser-language-detector.service";
+import {LanguageDetectorService} from "../../../services/language-detector.service";
 
 @Component({
   selector: 'app-navbar',
@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
   constructor(
     private sidenavService: SidenavService,
     private translate: TranslateService,
-    private browserLanguageDetector: BrowserLanguageDetectorService) {
+    private browserLanguageDetector: LanguageDetectorService) {
     this.languages = [
       { code: 'en', name: 'english', flag: '' },
       { code: 'es', name: 'spanish', flag: '../../assets/images/flags/es.png' },

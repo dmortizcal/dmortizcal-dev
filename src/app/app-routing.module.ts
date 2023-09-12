@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import {BaseComponent} from "./components/base/base.component";
 import {HomeComponent} from "./components/home/home.component";
 import {NotFoundComponent} from "./components/not-found/not-found.component";
 import {ContactComponent} from "./components/contact/contact.component";
+import {CvComponent} from "./components/cv/cv.component";
 
 const routes: Routes = [
   {
@@ -13,9 +14,12 @@ const routes: Routes = [
       {
         path: '',
         component: HomeComponent,
-      },{
+      }, {
         path: 'contacto',
         component: ContactComponent,
+      }, {
+        path: 'cv',
+        component: CvComponent,
       }
     ]
   },
@@ -29,4 +33,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

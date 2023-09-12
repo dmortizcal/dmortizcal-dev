@@ -15,7 +15,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
-import {BrowserLanguageDetectorService} from "./services/browser-language-detector.service";
+import {LanguageDetectorService} from "./services/language-detector.service";
+import { CvComponent } from './components/cv/cv.component';
 
 
 // Configura el cargador de traducción
@@ -32,6 +33,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     NotFoundComponent,
     ContactComponent,
+    CvComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   providers: [
     SidenavService,
-    BrowserLanguageDetectorService],
+    LanguageDetectorService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

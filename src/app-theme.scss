@@ -44,6 +44,8 @@ $app-theme-palette: (
 
 
 $app-theme-primary: mat.define-palette($app-theme-palette, 400,);
+$app-theme-secondary: mat.define-palette($app-theme-palette, 500,);
+$app-theme-tertiary: mat.define-palette($app-theme-palette, 800,);
 $app-theme-accent: mat.define-palette($app-theme-palette, 100,);
 $app-theme-warn: mat.define-palette(mat.$red-palette);
 
@@ -52,6 +54,8 @@ $app-theme-warn: mat.define-palette(mat.$red-palette);
 $app-theme: mat.define-light-theme((
   color: (
     primary: $app-theme-primary,
+    secondary: $app-theme-secondary,
+    tertiary: $app-theme-tertiary,
     accent: $app-theme-accent,
     warn: $app-theme-warn,
   )

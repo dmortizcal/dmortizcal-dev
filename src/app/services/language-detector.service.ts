@@ -4,16 +4,16 @@ import {TranslateService} from '@ngx-translate/core';
 @Injectable({
   providedIn: 'root',
 })
-export class BrowserLanguageDetectorService {
+export class LanguageDetectorService {
   constructor(private translate: TranslateService) {
   }
 
   detectAndSetLanguage(): void {
     const userLang = localStorage.getItem('language');
-    if (userLang === 'es') {
-      this.translate.use('es');
-    } else {
+    if (userLang === 'en') {
       this.translate.use('en');
+    } else {
+      this.translate.use('es');
     }
   }
 

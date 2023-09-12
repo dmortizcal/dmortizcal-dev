@@ -20,13 +20,38 @@
   "message": "Mensaje",
   "sending": "Enviando",
   "send": "Enviar",
-  "youCanAlsoFindMeAt": "También puedes encontrarme en"
+  "youCanAlsoFindMeAt": "También puedes encontrarme en",
+  "CV": "Hoja de vida",
+  "professionalResume": "Resumen Profesional",
+  "professionalResumeDescription": "Soy un desarrollador con más de 3 años de experiencia en aplicaciones web y móviles, abarcando tanto el desarrollo frontend como el backend. Mi experiencia se extiende a tecnologías como React, Angular, PrimeFaces, Spring Boot, Java y Flutter. Además, tengo experiencia en la gestión de bases de datos MySQL y PostgreSQL, así como en el uso de control de versiones con GitHub. Siempre estoy ansioso por aprender nuevas tecnologías y me apasiona ofrecer soluciones técnicas innovadoras en proyectos desafiantes.",
+  "education": "Educación",
+  "telematicsEngineering": "Ingeniería telemática.",
+  "technologistDataSystematization": "Tecnólogo en Sistematización de Datos.",
+  "technologistADSI": "Tecnólogo en Análisis y desarrollo de sistemas de información.",
+  "ud": "Universidad Distrital Francisco José de Caldas.",
+  "udDate": "2021 - Actualmente",
+  "sena": "Servicio Nacional de Aprendizaje (SENA).",
+  "experience": "Experiencia",
+  "knowledgeAndSkills": "Conocimentos y aptitudes",
+  "updateData": "Actualización de datos, para encontrar nuevos clientes, conocer a profundidad los gustos y preferencias e identificar a buenos prospectos.",
+  "createMicrosites": "Creación de micrositios, para ampliar la información de productos o servicios.",
+  "ftpManagement": "Encargado del servidor FTP, para la transferencia de archivos al y desde el servidor, crear direcciones y subir micrositios.",
+  "receiveDocumentation": "Recepción de documentación, análisis y eficaz respuesta para procesos de créditos.",
+  "systemAccess": "Manejo de aplicativos para ingresar al sistema de información del crédito.",
+  "digitizeDocumentation": "Digitalizar la documentación recibida, para proceder con el proceso de desembolso.",
+  "mobileAppDevelopment1": "Desarrollo de aplicativos móviles con Flutter para municipio de Sopó.",
+  "mobileAppDevelopment2": "Desarrollo de aplicativo móvil en Flutter para seguimiento de camiones y gestión de tickets para Transpremier LLC.",
+  "adminSuiteDevelopment": "Desarrollo de suite administrativa creada en Angular y Spring Boot para el municipio de Sopó.",
+  "wildflyServerManagement": "Manejo de servidores Wildfly para despliegue de aplicativos.",
+  "webAndMobileAppDevelopment": "Desarrollo de aplicativo web y móvil para manejo de subsidios de vivienda para el municipio de Sopó con React y Flutter.",
+  "officialCommunicationsSystem": "Desarrollo de aplicativo web SICO (Sistema Integrado de Comunicaciones Oficiales) para la Corporación Autónoma Regional de La Guajira en Java y PrimeFaces.",
+  "experienceDate1": "Ene 2014 - Jul 2014",
+  "experienceDate2": "Jun 2015 - Ago 2016",
+  "inPerson": "Presencial",
+  "hybrid": "Híbrido",
+  "homeOffice": "Trabajo en casa o desde casa",
+  "experienceDate3": "Oct 2020 - Actualmente",
+  "fullStackDeveloper": "Desarrollador FullStack",
+  "informationAnalyst": "Analista de Información",
+  "telemarketingAssistant": "Asistente Telemercadeo"
 }
-
-
-
-
-
-
-
-
