@@ -1,0 +1,53 @@
+<div class="container">
+  <h1> {{'projects' | translate }}</h1>
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image-pokeapi"></div>
+      <mat-card-title>PokeApi Project</mat-card-title>
+      <mat-card-subtitle>Proyecto Api Pokemon</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        PokeAPIProject es un proyecto demostrativo. En este proyecto, se utiliza la PokeAPI para permitir a los usuarios
+        explorar información detallada sobre diferentes Pokémon.
+        Este proyecto se desarrollo en Angular usando PrimeNG y se encuentra alojado en Firebase Hosting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-button (click)="openNewTab('https://github.com/dmortizcal/PokeAPIProject/')" mat-raised-button
+              color="primary">GitHub
+      </button>
+      <button mat-button (click)="openNewTab('https://pokeapi-dmortizcal.web.app/')" mat-raised-button color="primary">
+        Web
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <br/>
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image-fonoteca"></div>
+      <mat-card-title>Fonoteca de las infancias rurales de Colombia</mat-card-title>
+      <mat-card-subtitle>Fonoteca de las infancias rurales de Colombia.</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        La fonoteca es un proyecto desarrollado con la Universidad Pedagógica Nacional, en el marco de la
+        investigación – creación DSI 592-22. La Fonoteca de las infancias rurales contiene el patrimonio sonoro, la
+        memoria histórica, colectiva y cultural, de los saberes que circulan en las prácticas de crianza de niñas y
+        niños en contextos rurales.
+        Este proyecto se desarrollo en WordPress.
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button (click)="openNewTab('https://fonotecainfanciasrurales.com/')" mat-raised-button color="primary">
+        Web
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>

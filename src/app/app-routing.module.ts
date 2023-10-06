@@ -5,6 +5,7 @@ import {HomeComponent} from "./components/home/home.component";
 import {NotFoundComponent} from "./components/not-found/not-found.component";
 import {ContactComponent} from "./components/contact/contact.component";
 import {CvComponent} from "./components/cv/cv.component";
+import {ProjectsComponent} from "./components/projects/projects.component";
 
 const routes: Routes = [
   {
@@ -20,6 +21,9 @@ const routes: Routes = [
       }, {
         path: 'cv',
         component: CvComponent,
+      },{
+        path: 'proyectos',
+        component: ProjectsComponent,
       }
     ]
   },

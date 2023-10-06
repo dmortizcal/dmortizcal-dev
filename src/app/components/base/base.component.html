@@ -1,12 +1,19 @@
 <app-navbar></app-navbar>
 <mat-sidenav-container>
   <mat-sidenav mode="side" [opened]="isSidenavOpen" class="app-wrapper">
-    <a mat-button routerLink="contacto" (click)="closeSidenav()">
-      {{'contact' | translate}}
+
+    <a mat-button routerLink="proyectos" (click)="closeSidenav()">
+      {{'projects' | translate}}
     </a>
+
     <a mat-button routerLink="cv" (click)="closeSidenav()">
       {{'CV' | translate}}
     </a>
+
+    <a mat-button routerLink="contacto" (click)="closeSidenav()">
+      {{'contact' | translate}}
+    </a>
+
   </mat-sidenav>
   <router-outlet></router-outlet>
 </mat-sidenav-container>

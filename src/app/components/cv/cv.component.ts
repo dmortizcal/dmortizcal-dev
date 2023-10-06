@@ -17,6 +17,17 @@ export class CvComponent implements OnInit {
   constructor(private dataService: DataService) {
   }
 
+  private pdfUrl = 'assets/docs/cv.pdf';
+
+  downloadPDF(): void {
+    const link = document.createElement('a');
+    link.href = this.pdfUrl;
+    link.download = 'cv-dmortizcal.pdf';
+    link.target = '_blank';
+
+    link.click();
+  }
+
   getEducation() {
     this.dataService.getDataEducation().subscribe((data) => {
       this.education = data.data as EducationModel[]

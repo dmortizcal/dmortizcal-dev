@@ -17,6 +17,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {LanguageDetectorService} from "./services/language-detector.service";
 import { CvComponent } from './components/cv/cv.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 // Configura el cargador de traducción
@@ -34,6 +35,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NotFoundComponent,
     ContactComponent,
     CvComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

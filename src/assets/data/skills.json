@@ -39,6 +39,10 @@
     {
       "image": "assets/icons/springboot.png",
       "description": "Spring Boot"
+    },
+    {
+      "image": "assets/icons/wordpress.png",
+      "description": "WordPress"
     }
   ]
 }
