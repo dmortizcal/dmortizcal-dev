@@ -16,8 +16,9 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {LanguageDetectorService} from "./services/language-detector.service";
-import { CvComponent } from './components/cv/cv.component';
+import {CvComponent, DialogPdfComponent} from './components/cv/cv.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import {PdfViewerModule} from "ng2-pdf-viewer";
 
 
 // Configura el cargador de traducción
@@ -28,14 +29,15 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    BaseComponent,
-    FooterComponent,
     NavbarComponent,
+    FooterComponent,
+    BaseComponent,
     HomeComponent,
     NotFoundComponent,
     ContactComponent,
     CvComponent,
     ProjectsComponent,
+    DialogPdfComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       },
       defaultLanguage: 'es',
-    })
+    }),
+    PdfViewerModule
   ],
   providers: [
     SidenavService,

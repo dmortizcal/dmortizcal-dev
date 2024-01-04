@@ -4,11 +4,6 @@
   "english": "English",
   "hello": "Hello",
   "goToMainPage": "Go to main page",
-  "siteUnderConstruction":"Site under construction",
-  "workingMyPage":"I'm working on creating my page",
-  "comeBackSoon": "Come back soon",
-  "contactMeFollowingLink": "Although if you want to contact me, you can go to the following link",
-  "clickHere": "Click here",
   "contact": "Contact",
   "itIsGreatThatYouAreHere": "It's great that you are here",
   "contactMeAndMessage": "If you want to contact me, you can fill out the form below with your details and message.",
@@ -54,7 +49,21 @@
   "fullStackDeveloper": "FullStack Developer",
   "informationAnalyst": "Information Analyst",
   "telemarketingAssistant": "Telemarketing Assistant",
-  "projects": "Projects"
+  "projects": "Projects",
+  "viewPdf": "View PDF",
+  "close": "Close",
+  "thesisSubtitle": "Thesis to qualify for the degree of Telecommunications Engineer",
+  "thesisDescription": "Implementation of a deployment management platform for web applications on EC2 virtual instances in AWS and VMs in Azure.\n This project was developed in React using PrimeReact and is hosted on Firebase Hosting.",
+  "thesisDescription2": "I would like to emphasize that this project was awarded with an meritorious mention.",
+  "pokeSubtitle": "Pokemon API Project",
+  "pokeDescription": "PokeAPIProject is a demonstrative project. In this project, PokeAPI is used to allow users to explore detailed information about different Pokémon. This project was developed in Angular using PrimeNG and is hosted on Firebase Hosting.",
+  "fonotecaDescription": "The sound library is a project developed in collaboration with the National Pedagogical University, within the framework of research-creation DSI 592-22. The Sound Library of Rural Childhoods contains the sonic heritage, historical, collective, and cultural memory of the knowledge that circulates in the parenting practices of girls and boys in rural contexts. This project was developed in WordPress.",
+  "welcome": "Welcome",
+  "iAm": "I am {{name}}",
+  "developer": "Developer and engineer in telematics",
+  "intro1": "Here you will find a glimpse into my academic life, my professional journey, and some projects that I love to undertake in my free time.",
+  "intro2": "Explore and discover the different facets that make up my story; I hope you find something that inspires you!"
+
 }
 
 

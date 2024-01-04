@@ -1,3 +1,8 @@
+.header-image-thesis {
+  background-image: url('https://thesiscloudmag.web.app/static/media/logo.31e4e0ea4c9e63b9307f.png');
+  background-size: cover;
+}
+
 .header-image-pokeapi {
   background-image: url('https://raw.githubusercontent.com/dmortizcal/PokeAPIProject/master/src/favicon.ico');
   background-size: cover;
@@ -10,4 +15,8 @@
 
 button {
   margin: 5px;
+}
+
+p {
+  text-align: justify;
 }

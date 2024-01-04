@@ -9,6 +9,7 @@ export class DataService {
   private dataUrlEducation = '../../assets/data/education.json';
   private dataUrlExperience = '../../assets/data/experience.json';
   private dataUrlSkills = '../../assets/data/skills.json';
+  private dataUrlProjects = '../../assets/data/projects.json';
 
   constructor(private http: HttpClient) { }
 
@@ -22,5 +23,9 @@ export class DataService {
 
   getDataSkills(): Observable<any> {
     return this.http.get(this.dataUrlSkills);
+  }
+
+  getDataProjects(): Observable<any> {
+    return this.http.get(this.dataUrlProjects);
   }
 }

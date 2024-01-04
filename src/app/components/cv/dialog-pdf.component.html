@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>{{'CV' | translate}}</h1>
+
+<pdf-viewer [src]="pdf?.pdf || ''"
+            [render-text]="true"
+            [original-size]="false"
+            style="width: 700px; height: 500px"/>
+
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary"
+          (click)="onNoClick()">
+    {{'close'|translate}}
+  </button>
+</div>

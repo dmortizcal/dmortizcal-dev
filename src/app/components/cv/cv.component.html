@@ -1,9 +1,9 @@
 <div class="container">
   <div class="toolbar">
     <h1>{{ 'professionalResume' | translate }}</h1>
-    <button (click)="downloadPDF()" mat-raised-button color="primary">
+    <button (click)="openDialogPDF()" mat-raised-button color="primary">
       <mat-icon> insert_drive_file</mat-icon>
-      Descargar PDF
+      {{'viewPdf'| translate}}
     </button>
   </div>
 

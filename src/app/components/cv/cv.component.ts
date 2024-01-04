@@ -1,8 +1,13 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {DataService} from "../../services/data.service";
 import {EducationModel} from '../../models/EducationModel'
 import {ExperienceModel} from "../../models/ExperienceModel";
 import {SkillsModel} from "../../models/SkillsModel";
+import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+
+export interface dataPDF {
+  pdf: string;
+}
 
 @Component({
   selector: 'app-cv',
@@ -12,20 +17,31 @@ import {SkillsModel} from "../../models/SkillsModel";
 export class CvComponent implements OnInit {
   education: EducationModel[] = []
   experience: ExperienceModel[] = []
-  skills: SkillsModel[]=[]
+  skills: SkillsModel[] = []
 
-  constructor(private dataService: DataService) {
+  constructor(
+    private dataService: DataService,
+    public dialog: MatDialog,
+  ) {
   }
 
-  private pdfUrl = 'assets/docs/cv.pdf';
+  openDialogPDF() {
+    const pdfUrlEs = 'assets/docs/cv-es.pdf';
+    const pdfUrlEn = 'assets/docs/cv-en.pdf';
+    let pdf: string = ''
 
-  downloadPDF(): void {
-    const link = document.createElement('a');
-    link.href = this.pdfUrl;
-    link.download = 'cv-dmortizcal.pdf';
-    link.target = '_blank';
+    const userLang = localStorage.getItem('language');
+    if (userLang === 'en') {
+      pdf = pdfUrlEn
+    } else {
+      pdf = pdfUrlEs
+    }
 
-    link.click();
+    this.dialog.open(DialogPdfComponent, {
+      data: {
+        pdf: pdf
+      }
+    })
   }
 
   getEducation() {
@@ -39,6 +55,7 @@ export class CvComponent implements OnInit {
       this.experience = data.data as ExperienceModel[]
     })
   }
+
   getSkills() {
     this.dataService.getDataSkills().subscribe((data) => {
       this.skills = data.data as SkillsModel[]
@@ -51,3 +68,28 @@ export class CvComponent implements OnInit {
     this.getSkills()
   }
 }
+
+//COMPONENTE DIALOGO PDF
+@Component({
+  selector: 'app-dialog-pdf',
+  templateUrl: './dialog-pdf.component.html',
+})
+
+export class DialogPdfComponent {
+  pdf?: dataPDF;
+
+  constructor(
+    private dialogRef: MatDialogRef<DialogPdfComponent>,
+    public dialog: MatDialog,
+    @Inject(MAT_DIALOG_DATA) private dialogData: dataPDF) {
+    if (dialogData !== null) {
+      this.pdf = dialogData;
+    }
+  }
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+
+}
+
