@@ -6,7 +6,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppComponent} from "./app.component";
 import {BaseComponent} from "./components/base/base.component";
 import {FooterComponent} from "./components/base/footer/footer.component";
-import {NavbarComponent} from "./components/base/navbar/navbar.component";
 import {HomeComponent} from "./components/home/home.component";
 import {NotFoundComponent} from "./components/not-found/not-found.component";
 import {SidenavService} from "./services/sidenav.service";
@@ -29,7 +28,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     FooterComponent,
     BaseComponent,
     HomeComponent,

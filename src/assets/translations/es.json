@@ -24,7 +24,6 @@
   "technologistDataSystematization": "Tecnólogo en Sistematización de Datos.",
   "technologistADSI": "Tecnólogo en Análisis y desarrollo de sistemas de información.",
   "ud": "Universidad Distrital Francisco José de Caldas.",
-  "udDate": "2021 - Actualmente",
   "sena": "Servicio Nacional de Aprendizaje (SENA).",
   "experience": "Experiencia",
   "knowledgeAndSkills": "Conocimentos y aptitudes",
@@ -62,5 +61,6 @@
   "iAm": "Soy {{name}}",
   "developer": "Desarrollador e ingeniero en telemática",
   "intro1": "Aquí encontrarás un vistazo a mi vida académica, mi trayectoria laboral y algunos proyectos que me apasiona emprender en mis momentos libres.",
-  "intro2": "Explora y descubre las distintas facetas que componen mi historia, ¡espero que encuentres algo que te inspire!"
+  "intro2": "Explora y descubre las distintas facetas que componen mi historia, ¡espero que encuentres algo que te inspire!",
+  "changeTheme": "Cambiar tema"
 }

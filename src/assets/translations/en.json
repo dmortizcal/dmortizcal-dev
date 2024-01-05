@@ -24,7 +24,6 @@
   "technologistDataSystematization": "Data Systematization Technologist",
   "technologistADSI": "Information Systems Development Technologist",
   "ud": "Universidad Distrital Francisco José de Caldas.",
-  "udDate": "2021 - Present",
   "sena": "Servicio Nacional de Aprendizaje (SENA).",
   "experience": "Experience",
   "knowledgeAndSkills": "Knowledge and skills",
@@ -62,8 +61,8 @@
   "iAm": "I am {{name}}",
   "developer": "Developer and engineer in telematics",
   "intro1": "Here you will find a glimpse into my academic life, my professional journey, and some projects that I love to undertake in my free time.",
-  "intro2": "Explore and discover the different facets that make up my story; I hope you find something that inspires you!"
-
+  "intro2": "Explore and discover the different facets that make up my story; I hope you find something that inspires you!",
+  "changeTheme": "Change theme"
 }
 
 
