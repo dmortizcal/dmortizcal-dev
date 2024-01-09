@@ -14,8 +14,6 @@ export class AppComponent implements OnInit {
   viewIconMenu = true;
   languages = [{}]
   @HostBinding('class') className = '';
-  darkTheme = false;
-
 
   constructor(private dialog: MatDialog,
               private sidenavService: SidenavService,
@@ -23,23 +21,22 @@ export class AppComponent implements OnInit {
               private overlay: OverlayContainer,
               private browserLanguageDetector: LanguageDetectorService) {
     this.languages = [
-      {code: 'en', name: 'english', flag: ''},
-      {code: 'es', name: 'spanish', flag: '../../assets/images/flags/es.png'},
+      {code: 'en', name: 'english'},
+      {code: 'es', name: 'spanish'},
     ];
   }
 
   changeTheme() {
-    const darkClassName = 'darkMode'
     const theme = localStorage.getItem('theme');
 
     if (theme === 'light') {
       localStorage.setItem('theme', 'dark');
-      this.className = darkClassName;
-      this.overlay.getContainerElement().classList.remove(darkClassName);
+      this.className = 'darkMode';
+      this.overlay.getContainerElement().classList.remove('darkMode');
     } else {
       localStorage.setItem('theme', 'light');
       this.className = '';
-      this.overlay.getContainerElement().classList.add(darkClassName);
+      this.overlay.getContainerElement().classList.add('darkMode');
     }
   }
 

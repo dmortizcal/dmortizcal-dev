@@ -54,7 +54,7 @@ $app-light-theme: mat.define-light-theme((
     warn: $app-theme-warn,
   )
 ));
-@include mat.all-component-colors($app-light-theme);
+@include mat.all-component-themes($app-light-theme);
 
 // Define a dark theme
 $app-dark-theme: mat.define-dark-theme((color:(

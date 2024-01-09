@@ -1,13 +1,20 @@
 <h1 mat-dialog-title>{{'CV' | translate}}</h1>
 
-<pdf-viewer [src]="pdf?.pdf || ''"
+<pdf-viewer [src]="base64 ?? ''"
             [render-text]="true"
             [original-size]="false"
+            [autoresize]="true"
             style="width: 700px; height: 500px"/>
 
-<div mat-dialog-actions>
+<div mat-dialog-actions class="align-items-end">
   <button mat-raised-button color="primary"
-          (click)="onNoClick()">
+          (click)="downloadPDF()">
+    <mat-icon>cloud_download</mat-icon>
+    {{'downloadPdf'|translate}}
+  </button>
+  <button mat-raised-button color="primary"
+          [mat-dialog-close]="true">
+    <mat-icon>close</mat-icon>
     {{'close'|translate}}
   </button>
 </div>
