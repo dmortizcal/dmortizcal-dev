@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "image": "assets/icons/ts.png",
+      "description": "TypeScript"
+    },
+    {
+      "image": "assets/icons/angular.png",
+      "description": "Angular"
+    },
+    {
+      "image": "assets/icons/postgresql.png",
+      "description": "PostgreSQL"
+    },
+    {
+      "image": "assets/icons/mysql.png",
+      "description": "MySQL"
+    },
+    {
+      "image": "assets/icons/flutter.png",
+      "description": "Flutter"
+    },
+    {
+      "image": "assets/icons/github.png",
+      "description": "GitHub"
+    },
+    {
+      "image": "assets/icons/js.png",
+      "description": "JavaScript"
+    },
+    {
+      "image": "assets/icons/react.png",
+      "description": "React"
+    },
+    {
+      "image": "assets/icons/java.png",
+      "description": "Java"
+    },
+    {
+      "image": "assets/icons/springboot.png",
+      "description": "Spring Boot"
+    },
+    {
+      "image": "assets/icons/wordpress.png",
+      "description": "WordPress"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+

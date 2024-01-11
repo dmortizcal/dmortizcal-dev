@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="toolbar">
+    <h1>{{ 'professionalResume' | translate }}</h1>
+    <button (click)="openDialogPDF()" mat-raised-button color="primary">
+      <i class="fa-solid fa-file-pdf"></i>
+      {{'viewPdf'| translate}}
+    </button>
+  </div>
+
+  <p>{{'professionalResumeDescription'|translate}}</p>
+
+  <h1> {{'education' | translate }}</h1>
+  <div *ngFor="let item of education">
+    <div class="timeline">
+      <div class="item"></div>
+      <div class="description">
+        <b>{{item.name|translate}}</b>
+        <p>{{item.institution|translate}} <br> {{item.city}} <br> {{item.year | translate}} </p></div>
+    </div>
+  </div>
+
+  <h1> {{'experience' | translate }}</h1>
+  <div *ngFor="let item of experience">
+    <div class="timeline">
+      <div class="item"></div>
+      <div class="description">
+        <b>{{item.name|translate}}</b>
+        <p>{{item.company|translate}} <br> {{item.city}} <br> {{item.year | translate}} <br/>
+          <span class="customer-badge" style="margin-right: 5px">{{item.type | translate}}</span>
+        </p>
+        <div *ngFor="let skill of item.skills" class="skill">
+          <p>● {{skill.description | translate}}</p>
+        </div>
+      </div>
+    </div>
+    <br/>
+  </div>
+
+  <h1> {{'knowledgeAndSkills' | translate }}</h1>
+  <div class="grid">
+    <div class="col-6 md:col-4 lg:col-3" *ngFor="let skill of skills">
+      <div class="timeline">
+        <div class="item"></div>
+        <div class="description-skills">
+          <img src="{{skill.image}}" alt="{{skill.description}}" height="20"> {{skill.description}}</div>
+      </div>
+    </div>
+
+  </div>
+</div>

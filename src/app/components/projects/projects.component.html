@@ -1,0 +1,38 @@
+<div class="container">
+  <h1> {{'projects' | translate }}</h1>
+
+  <div *ngFor="let item of projects">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="{{item.urlImage}}"></div>
+        <mat-card-title>{{item.title | translate}}</mat-card-title>
+        <mat-card-subtitle>{{item.subtitle | translate}}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>{{item.description| translate}}</p>
+        <p>{{item.description2| translate}}</p>
+      </mat-card-content>
+
+      <mat-card-actions align="end">
+        <button mat-raised-button mat-button
+                *ngIf="item.git!==''"
+                (click)="openNewTab(item?.git|| '')"
+                color="primary">
+          <i class="fab fa-github"></i>
+          GitHub
+        </button>
+
+        <button mat-raised-button mat-button
+                *ngIf="item.web!==''"
+                (click)="openNewTab(item?.web || '')"
+                color="primary">
+          <i class="fa-solid fa-link"></i>
+          Web
+        </button>
+      </mat-card-actions>
+    </mat-card>
+
+    <br/>
+  </div>
+</div>

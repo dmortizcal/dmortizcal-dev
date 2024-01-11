@@ -6,9 +6,18 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  viewIconMenu = true;
+
   constructor() {
   }
 
   ngOnInit(): void {
+    if (window.innerWidth >= 800) {
+      this.viewIconMenu = false;
+    }
+  }
+
+  openLink(link: string): void {
+    window.open(link, '_blank');
   }
 }

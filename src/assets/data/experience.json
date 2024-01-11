@@ -1,0 +1,67 @@
+{
+  "data" : [
+    {
+      "name": "fullStackDeveloper",
+      "company": "Solredes SAS",
+      "type": "hybrid",
+      "year": "experienceDate3",
+      "city": "Bogotá - Colombia",
+      "skills": [
+        {
+          "description": "mobileAppDevelopment1"
+        },
+        {
+          "description": "mobileAppDevelopment2"
+        },
+        {
+          "description": "adminSuiteDevelopment"
+        },
+        {
+          "description": "wildflyServerManagement"
+        },
+        {
+          "description": "webAndMobileAppDevelopment"
+        },
+        {
+          "description": "officialCommunicationsSystem"
+        }
+      ]
+    },
+    {
+      "name": "informationAnalyst",
+      "company": "Carvajal Tecnologia y Servicios",
+      "type": "inPerson",
+      "year": "experienceDate2",
+      "city": "Bogotá - Colombia",
+      "skills": [
+        {
+          "description": "receiveDocumentation"
+        },
+        {
+          "description": "systemAccess"
+        },
+        {
+          "description": "digitizeDocumentation"
+        }
+      ]
+    },
+    {
+      "name": "telemarketingAssistant",
+      "company": "SRF Consultores – Gold Partner Microsoft Dynamics",
+      "type": "inPerson",
+      "year": "experienceDate1",
+      "city": "Bogotá - Colombia",
+      "skills": [
+        {
+          "description": "updateData"
+        },
+        {
+          "description": "createMicrosites"
+        },
+        {
+          "description": "ftpManagement"
+        }
+      ]
+    }
+  ]
+}

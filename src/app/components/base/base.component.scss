@@ -1,5 +1,5 @@
 app-navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -8,7 +8,7 @@ app-navbar {
 
 app-footer {
   position: fixed;
-  background-color: #5C6BC0;
+  background-color: #080024;
   opacity: 0.7;
   bottom: 0;
   left: 0;
@@ -17,16 +17,39 @@ app-footer {
   z-index: 2;
 }
 
-
 .mat-sidenav {
-  top: 65px;
-  margin: 5px 15px;
   width: 180px;
+  height: 100%;
+
+  a {
+    top: 70px;
+    margin: 0px 15px;
+  }
 }
 
 .mat-sidenav-container {
   min-height: 100%;
 }
 
-button {
+.home-container {
+  padding: 20px 20px 70px 20px;
+  margin-top: 56px;
+  min-height: calc(100vh - 132px);
+  transition: all 500ms ease-in-out;
+
+  &.open-menu {
+    margin-left: 115px;
+  }
+
+  &.is-open-sub {
+    margin-left: 345px;
+  }
+}
+
+.mat-expansion-panel-body {
+  padding: 0;
+}
+
+.mat-expansion-panel {
+  box-shadow: none !important;
 }
