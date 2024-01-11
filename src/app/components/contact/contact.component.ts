@@ -40,7 +40,7 @@ export class ContactComponent {
           duration: 5000, //
           horizontalPosition: 'end',
           verticalPosition: 'top',
-          panelClass: 'snackbar-success' // Clase CSS personalizada
+          panelClass: 'snackbar-success'
         });
       }, (error) => {
         console.log(error.text);
@@ -48,9 +48,13 @@ export class ContactComponent {
           duration: 5000, //
           horizontalPosition: 'end',
           verticalPosition: 'top',
-          panelClass: 'snackbar-success' // Clase CSS personalizada
+          panelClass: 'snackbar-success'
         });
       });
+  }
+
+  openLink(link: string): void {
+    window.open(link, '_blank');
   }
 
 }

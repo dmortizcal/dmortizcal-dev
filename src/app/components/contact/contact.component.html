@@ -62,19 +62,24 @@
   <div class="card">
     <div class="flex justify-content-start">
       <div class="flex align-items-center justify-content-center w-4rem h-4rem">
-        <a matTooltip="WhatsApp" target="_blank" href="https://wa.me/573022422101/">
-          <img src="../../../assets/icons/whatsapp.png" alt="LogoWhatsApp" class="img-redes">
-        </a>
+        <button mat-icon-button class="social-button" matTooltip="WhatsApp"
+                (click)="openLink('https://wa.me/573022422101/')">
+          <i class="fa-brands fa-whatsapp"></i>
+        </button>
       </div>
+
       <div class="flex align-items-center justify-content-center w-4rem h-4rem">
-        <a matTooltip="GitHub" target="_blank" href="https://github.com/dmortizcal/">
-          <img src="assets/icons/github.png" alt="LogoGitHub" class="img-redes">
-        </a>
+        <button mat-icon-button class="social-button" matTooltip="GitHub"
+                (click)="openLink('https://github.com/dmortizcal/')">
+          <i class="fa-brands fa-github"></i>
+        </button>
       </div>
+
       <div class="flex align-items-center justify-content-center w-4rem h-4rem">
-        <a matTooltip="Linkedin" target="_blank" href="https://www.linkedin.com/in/dmortizcal/">
-          <img src="../../../assets/icons/linkedin.png" alt="LogoLinkedin" class="img-redes">
-        </a>
+        <button mat-icon-button class="social-button" matTooltip="LinkedIn"
+                (click)="openLink('https://www.linkedin.com/in/dmortizcal/')">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </button>
       </div>
     </div>
   </div>

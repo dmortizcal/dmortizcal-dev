@@ -16,16 +16,18 @@
 
       <mat-card-actions align="end">
         <button mat-raised-button mat-button
-                disabled="{{item.git==''}}"
+                *ngIf="item.git!==''"
                 (click)="openNewTab(item?.git|| '')"
                 color="primary">
+          <i class="fab fa-github"></i>
           GitHub
         </button>
 
         <button mat-raised-button mat-button
+                *ngIf="item.web!==''"
                 (click)="openNewTab(item?.web || '')"
-                disabled="{{item.web==''}}"
                 color="primary">
+          <i class="fa-solid fa-link"></i>
           Web
         </button>
       </mat-card-actions>
