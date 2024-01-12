@@ -18,7 +18,8 @@
   "youCanAlsoFindMeAt": "También puedes encontrarme en",
   "CV": "Hoja de vida",
   "professionalResume": "Resumen Profesional",
-  "professionalResumeDescription": "Soy un desarrollador con más de 3 años de experiencia en aplicaciones web y móviles, abarcando tanto el desarrollo frontend como el backend. Mi experiencia se extiende a tecnologías como React, Angular, PrimeFaces, Spring Boot, Java y Flutter. Además, tengo experiencia en la gestión de bases de datos MySQL y PostgreSQL, así como en el uso de control de versiones con GitHub. Siempre estoy ansioso por aprender nuevas tecnologías y me apasiona ofrecer soluciones técnicas innovadoras en proyectos desafiantes.",
+  "professionalResumeDescription": "Desarrollador con más de 3 años de experiencia en aplicaciones web y móviles, abarcando tanto el desarrollo frontend como el backend. Mi experiencia se extiende a tecnologías como React, Angular, PrimeFaces, Spring Boot, Java y Flutter. Además, tengo experiencia en la gestión de bases de datos MySQL y PostgreSQL, así como en el uso de control de versiones con GitHub. \nSiempre estoy entusiasmado por aprender nuevas tecnologías y me apasiona ofrecer soluciones técnicas innovadoras en proyectos desafiantes.",
+
   "education": "Educación",
   "telematicsEngineering": "Ingeniero en telemática.",
   "technologistDataSystematization": "Tecnólogo en Sistematización de Datos.",
@@ -51,7 +52,7 @@
   "projects": "Proyectos",
   "viewPdf": "Ver PDF",
   "close": "Cerrar",
-  "thesisSubtitle": "Tesis para optar al título de Ingeniero en Telemática",
+  "thesisSubtitle": "Monografia para optar al título de Ingeniero en Telemática",
   "thesisDescription": "Implementación de una plataforma de gestión de despliegue de aplicaciones web sobre instancias virtuales EC2 en AWS y VMs en Azure.\n Este proyecto se desarrolló en React utilizando PrimeReact y está alojado en Firebase Hosting.",
   "thesisDescription2": "Quiero destacar que este proyecto fue distinguido con un reconocimiento meritorio.",
   "pokeSubtitle": "Proyecto API Pokemon",
@@ -63,5 +64,11 @@
   "intro1": "Aquí encontrarás un vistazo a mi vida académica, mi trayectoria laboral y algunos proyectos que me apasiona emprender en mis momentos libres.",
   "intro2": "Explora y descubre las distintas facetas que componen mi historia, ¡espero que encuentres algo que te inspire!",
   "changeTheme": "Cambiar tema",
-  "downloadPdf": "Descargar PDF"
+  "downloadPdf": "Descargar PDF",
+  "404":"Página no Encontrada",
+  "oops":"¡Oops!",
+  "404Message": "Lo siento, pero la página que estás buscando no existe en mi sitio. Puede haber sido eliminada, movida o tal vez escribiste incorrectamente la dirección.",
+  "inProgress":"En curso",
+  "finalized": "Finalizado",
+  "cancelled": "Cancelado"
 }

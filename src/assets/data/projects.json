@@ -3,6 +3,7 @@
     {
       "title": "ThesisCloudMag",
       "subtitle": "thesisSubtitle",
+      "status": "finalized",
       "description": "thesisDescription",
       "description2": "thesisDescription2",
       "urlImage": "header-image-thesis",
@@ -11,6 +12,7 @@
     },{
       "title": "PokeApi Project",
       "subtitle": "pokeSubtitle",
+      "status": "inProgress",
       "description": "pokeDescription",
       "description2": "",
       "urlImage": "header-image-pokeapi",
@@ -19,6 +21,7 @@
     },{
       "title": "Fonoteca de las infancias rurales de Colombia",
       "subtitle": "Fonoteca de las infancias rurales de Colombia",
+      "status": "finalized",
       "description": "fonotecaDescription",
       "description2": "",
       "urlImage": "header-image-fonoteca",

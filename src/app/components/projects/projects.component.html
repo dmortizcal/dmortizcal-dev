@@ -6,10 +6,16 @@
       <mat-card-header>
         <div mat-card-avatar class="{{item.urlImage}}"></div>
         <mat-card-title>{{item.title | translate}}</mat-card-title>
-        <mat-card-subtitle>{{item.subtitle | translate}}</mat-card-subtitle>
+        <mat-card-subtitle>
+           <span class="customer-badge status-{{item.status}}"
+                 style="margin-right: 5px">
+            {{item.status | translate}}
+          </span>
+        </mat-card-subtitle>
       </mat-card-header>
 
       <mat-card-content>
+        <b>{{item.subtitle | translate}}</b>
         <p>{{item.description| translate}}</p>
         <p>{{item.description2| translate}}</p>
       </mat-card-content>

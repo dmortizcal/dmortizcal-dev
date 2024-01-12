@@ -20,3 +20,27 @@ button {
 p {
   text-align: justify;
 }
+
+.customer-badge {
+  border-radius: 50px;
+  padding: 0.25em 0.5rem;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+
+
+  &.status-inProgress {
+    background-color: #00b3e4;
+    color: #ffffff;
+  }
+
+  &.status-finalized {
+    background-color: #47b047;
+    color: #ffffff;
+  }
+
+  &.status-cancelled {
+    background-color: #e30729;
+    color: #ffffff;
+  }
+}

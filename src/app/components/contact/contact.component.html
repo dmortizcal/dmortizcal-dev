@@ -1,13 +1,15 @@
 <div class="container">
-  <h1>¡{{'hello' | translate }}! 👋</h1>
-  <b>¡{{'itIsGreatThatYouAreHere'|translate}}!</b>
-  <p>{{'contactMeAndMessage'|translate}}</p>
+  <div class="grid">
+    <div class="col-12 md:col-12 lg:col-2"></div>
+    <div class="col-12 md:col-12 lg:col-8">
+      <h1>¡{{'hello' | translate }}! 👋</h1>
+      <b>¡{{'itIsGreatThatYouAreHere'|translate}}!</b>
+      <p>{{'contactMeAndMessage'|translate}}</p>
 
-  <h3>{{'contactForm'|translate}}:</h3>
-  <form [formGroup]="formContacto" (submit)="sendEmail($event)">
+      <h3>{{'contactForm'|translate}}:</h3>
+      <form [formGroup]="formContacto" (submit)="sendEmail($event)">
 
-    <div class="grid">
-      <div class="col-12 md:col-12 lg:col-8">
+
         <mat-form-field appearance="fill" class="full-width">
           <mat-label>{{'name'|translate}}</mat-label>
           <label>
@@ -18,9 +20,8 @@
             {{'requiredField'|translate}}
           </mat-error>
         </mat-form-field>
-      </div>
 
-      <div class="col-12 md:col-12 lg:col-8">
+
         <mat-form-field appearance="fill" class="full-width">
           <mat-label>{{'email'|translate}}</mat-label>
           <label>
@@ -31,9 +32,7 @@
             {{'incorrectEmail'|translate}}
           </mat-error>
         </mat-form-field>
-      </div>
 
-      <div class="col-12 md:col-12 lg:col-8">
         <mat-form-field appearance="fill" class="full-width">
           <mat-label>{{'message'|translate}}</mat-label>
           <textarea matInput required formControlName="message"
@@ -42,44 +41,44 @@
             {{'requiredField'|translate}}
           </mat-error>
         </mat-form-field>
-      </div>
 
-      <div class="col-12 md:col-12 lg:col-8">
+
         <div class="flex justify-content-end">
           <button mat-flat-button color="primary" type="submit" [disabled]="saving">
             <mat-icon>send</mat-icon>
             {{ 'send'|translate  }}
           </button>
         </div>
-      </div>
-    </div>
 
-  </form>
 
-  <br/>
+      </form>
 
-  <h3>{{'youCanAlsoFindMeAt'|translate}}:</h3>
-  <div class="card">
-    <div class="flex justify-content-start">
-      <div class="flex align-items-center justify-content-center w-4rem h-4rem">
-        <button mat-icon-button class="social-button" matTooltip="WhatsApp"
-                (click)="openLink('https://wa.me/573022422101/')">
-          <i class="fa-brands fa-whatsapp"></i>
-        </button>
-      </div>
+      <br/>
 
-      <div class="flex align-items-center justify-content-center w-4rem h-4rem">
-        <button mat-icon-button class="social-button" matTooltip="GitHub"
-                (click)="openLink('https://github.com/dmortizcal/')">
-          <i class="fa-brands fa-github"></i>
-        </button>
-      </div>
+      <h3>{{'youCanAlsoFindMeAt'|translate}}:</h3>
+      <div class="card">
+        <div class="flex justify-content-start">
+          <div class="flex align-items-center justify-content-center w-4rem h-4rem">
+            <button mat-icon-button class="social-button" matTooltip="WhatsApp"
+                    (click)="openLink('https://wa.me/573022422101/')">
+              <i class="fa-brands fa-whatsapp"></i>
+            </button>
+          </div>
 
-      <div class="flex align-items-center justify-content-center w-4rem h-4rem">
-        <button mat-icon-button class="social-button" matTooltip="LinkedIn"
-                (click)="openLink('https://www.linkedin.com/in/dmortizcal/')">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </button>
+          <div class="flex align-items-center justify-content-center w-4rem h-4rem">
+            <button mat-icon-button class="social-button" matTooltip="GitHub"
+                    (click)="openLink('https://github.com/dmortizcal/')">
+              <i class="fa-brands fa-github"></i>
+            </button>
+          </div>
+
+          <div class="flex align-items-center justify-content-center w-4rem h-4rem">
+            <button mat-icon-button class="social-button" matTooltip="LinkedIn"
+                    (click)="openLink('https://www.linkedin.com/in/dmortizcal/')">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

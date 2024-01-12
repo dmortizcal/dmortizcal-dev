@@ -19,7 +19,7 @@ const routes: Routes = [
         path: 'contacto',
         component: ContactComponent,
       }, {
-        path: 'cv',
+        path: 'hoja-de-vida',
         component: CvComponent,
       },{
         path: 'proyectos',

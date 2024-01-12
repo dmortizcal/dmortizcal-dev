@@ -18,14 +18,17 @@ app-footer {
 }
 
 .mat-sidenav {
-  width: 180px;
+  width: 150px;
   height: 100%;
 
   a {
-    top: 70px;
-    margin: 0px 15px;
+    top: 10px;
+    margin: 0 15px;
+    text-align: left;
+    min-width: 0;
   }
 }
+
 
 .mat-sidenav-container {
   min-height: 100%;

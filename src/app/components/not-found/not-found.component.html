@@ -1,16 +1,21 @@
-<body>
-<div class="home-container">
-  <div class="center">
-    <br/>
-    <br/>
-    <br/>
-    <img mat-card-image src="../../../assets/images/not-found.png" alt="404 - Not Found">
-  </div>
-  <br/>
-  <br/>
-  <div class="center">
-    <button mat-flat-button color="accent" routerLink="/"> Ir a la página principal</button>
+<div class="container pt-8">
+
+  <div class="grid">
+    <div class="col-12 md:col-12 lg:col-5">
+      <img src="../../../assets/images/not-found.png" alt="Not Found" *ngIf="!viewIconMenu">
+    </div>
+
+    <div class="col-12 md:col-12 lg:col-5">
+      <h1>{{'oops'|translate }} </h1>
+      <h1>{{'404'|translate }}. </h1>
+      <p>{{'404Message'|translate}}</p>
+
+      <button mat-flat-button color="primary" routerLink="/"> {{'goToMainPage'| translate}}
+        <i class="fa fa-home" aria-hidden="true"></i>
+      </button>
+
+    </div>
   </div>
 
+  <img src="../../../assets/images/not-found.png" alt="Not Foud" *ngIf="viewIconMenu">
 </div>
-</body>

@@ -18,7 +18,7 @@
   "youCanAlsoFindMeAt": "You can also find me at",
   "CV": "CV",
   "professionalResume": "Professional resume",
-  "professionalResumeDescription": "I am a developer with over 3 years of experience in web and mobile applications, covering both frontend and backend development. My expertise spans technologies such as React, Angular, PrimeFaces, Spring Boot, Java, and Flutter. Additionally, I have experience in managing MySQL and PostgreSQL databases, as well as using version control with GitHub. I am always eager to learn new technologies and am passionate about delivering innovative technical solutions to challenging projects.",
+  "professionalResumeDescription": "Developer with over 3 years of experience in web and mobile applications, covering both frontend and backend development. My expertise spans technologies such as React, Angular, PrimeFaces, Spring Boot, Java, and Flutter. Additionally, I have experience in managing MySQL and PostgreSQL databases, as well as using version control with GitHub. \nI am always enthusiastic to learn new technologies and am passionate about delivering innovative technical solutions to challenging projects.",
   "education": "Education",
   "telematicsEngineering": "Telematic Engineering",
   "technologistDataSystematization": "Data Systematization Technologist",
@@ -51,7 +51,7 @@
   "projects": "Projects",
   "viewPdf": "View PDF",
   "close": "Close",
-  "thesisSubtitle": "Thesis to qualify for the degree of Telecommunications Engineer",
+  "thesisSubtitle": "Monograph to qualify for the degree of Telecommunications Engineer",
   "thesisDescription": "Implementation of a deployment management platform for web applications on EC2 virtual instances in AWS and VMs in Azure.\n This project was developed in React using PrimeReact and is hosted on Firebase Hosting.",
   "thesisDescription2": "I would like to emphasize that this project was awarded with an meritorious mention.",
   "pokeSubtitle": "Pokemon API Project",
@@ -63,7 +63,13 @@
   "intro1": "Here you will find a glimpse into my academic life, my professional journey, and some projects that I love to undertake in my free time.",
   "intro2": "Explore and discover the different facets that make up my story; I hope you find something that inspires you!",
   "changeTheme": "Change theme",
-  "downloadPdf": "Download PDF"
+  "downloadPdf": "Download PDF",
+  "404":"Page Not Found",
+  "oops": "Oops!",
+  "404Message": "I'm sorry, but the page you are looking for doesn't exist on my site. It may have been deleted, moved, or perhaps you typed the address incorrectly.",
+  "inProgress":"In progress",
+  "finalized": "Finalized",
+  "cancelled": "Cancelled"
 }
 
 

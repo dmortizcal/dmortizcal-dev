@@ -6,12 +6,13 @@
             [autoresize]="true"
             style="width: 700px; height: 500px"/>
 
-<div mat-dialog-actions class="align-items-end">
+<div mat-dialog-actions class="flex justify-content-end">
   <button mat-raised-button color="primary"
           (click)="downloadPDF()">
     <i class="fa-solid fa-download"></i>
     {{'downloadPdf'|translate}}
   </button>
+
   <button mat-raised-button color="primary"
           [mat-dialog-close]="true">
     <mat-icon>close</mat-icon>

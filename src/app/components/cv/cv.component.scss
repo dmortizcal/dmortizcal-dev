@@ -1,6 +1,9 @@
 
 p {
   text-align: justify;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
 }
 
 .timeline {
@@ -11,13 +14,14 @@ p {
     height: 11px;
     border-radius: 50%;
     background-color: #080024;
-    margin: 4px 15px 2px 0px;
+    margin: 4px 15px 2px 0;
   }
 
   .description {
     width: 100%;
     margin-right: 10px;
   }
+
   .description-skills {
     width: 100%;
     margin-right: 10px;
@@ -44,11 +48,4 @@ p {
   p {
     margin: 0;
   }
-}
-
-.toolbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
 }
